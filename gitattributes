@@ -1,0 +1,10 @@
+# Language stats on GitHub
+# Exclude the ARM/ST CMSIS headers (~1.8 MB of vendor code) from the language bar
+Drivers/CMSIS/** linguist-vendored
+
+# Make sure .s files are counted as Assembly and headers as C
+*.s linguist-language=Assembly
+*.h linguist-language=C
+
+# Normalize line endings
+* text=auto
